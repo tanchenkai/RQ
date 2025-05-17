@@ -10,3 +10,8 @@
 System.Matching_MR Qwen2.5VL+ChatGPT  
 System.Matching_MR_LLM GPT_VL + ChatGPT   
 System.Matching_MR_LLM GPT_VL + ChatGPT 的结果保存在Save中  
+
+3.分离了画图和视频的程序，之前画图是4090 3090显卡显存会显示不足，因此换了一个4bit量化的画图程序
+https://github.com/mit-han-lab/nunchaku
+这个程序需要cuda 12.6
+而Vista是采用的xformer的加速版本，因此3090只能安装12.1，需要分离这两个程序。
